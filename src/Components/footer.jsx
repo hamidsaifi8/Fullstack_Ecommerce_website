@@ -96,9 +96,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="Footer-bottom bg-gray-800 text-white p-4 flex">
+      <div className="Footer-divider bg-gray-800 text-gray-600 p-3 px-12">
+        <hr />
+      </div>
+
+      <div className="Footer-bottom bg-gray-800 text-white p-4 flex sm:grid grid-cols-1 lg:grid-cols-2 justify-between items-center">
         <div className="footer-left">
-          <ul className="flex space-x-6 px-2 text-3xl ml-12 ">
+          <ul className="flex space-x-6 px-2 text-3xl ml-12">
             <li>
               <a href="https://www.facebook.com/login.php/" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} size="x" />
@@ -125,14 +129,17 @@ const Footer = () => {
 
         <div className="footer-right ml-auto pr-10 flex">
           <input
-            className="border-2 border-gray-600 px-4 py-2"
+            className="border-2 border-gray-600 px-4 py-2 rounded-l-sm"
             type="email"
             placeholder="Email"
           />
-          <button className="border-2 border-green-700 px-2 bg-green-700">
+          <button className="border-2 border-green-700 px-2 bg-green-700 rounded-r-sm">
             Subscribe
           </button>
         </div>
+      </div>
+      <div className="header-bottom bg-gray-900 text-white py-6 block px-14 font=roboto font-light text-lg text-center">
+        Copyright &copy; 2025 ZayShop. All rights reserved.
       </div>
     </>
   );

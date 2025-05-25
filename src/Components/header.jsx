@@ -8,7 +8,7 @@ import {
 
 const Header = () => {
   return (
-    <div className="header-container bg-black text-white h-10 py-2 px-8 font-sans font-light text-sm">
+    <div className="header-container bg-black text-white py-3 h-12 px-8 font-sans font-light text-sm flex flex-col">
       <div className="header flex">
         <div className="header-left">
           <ul className="flex space-x-4 ml-4 px-4">
@@ -21,7 +21,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="header-right flex ml-auto pr-10 ">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-4">
             <li>
               <a href="https://www.facebook.com/login.php/" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} size="x" />
